@@ -1,7 +1,44 @@
 {% extends "base.html" %}
 
-{% block content %}
-    
-    <p>lala inicio</p>
+{% block title %}Bienvenido{% endblock title %}
 
-{% endblock  %}
+{% block content %}
+
+<section class="articulo">
+    <article>artico 1</article>
+    <article>artico 2</article>
+    <article>artico 3</article>
+</section>
+
+
+<div>
+    <ul class="list-icon">
+        <li><img src="{{ url_for('static', filename='img/css_icon.png') }}" class="icon"></li>
+        <li><img src="{{ url_for('static', filename='img/html_icon.png') }}" class="icon"></li>
+        <li><img src="{{ url_for('static', filename='img/sql_icon.png') }}" class="icon"></li>
+        <li><img src="{{ url_for('static', filename='img/python_icon.png') }}" class="icon"></li>
+        <li><img src="{{ url_for('static', filename='img/excel_icon.png') }}" class="icon"></li>
+        <li><img src="{{ url_for('static', filename='img/github_icon.png') }}" class="icon"></li>
+    </ul>
+</div>
+
+<div class="hero">
+    <div class="hero-content">
+        <div class="left">
+            <h3>Hola soy Alberto Rodríguez</h3>
+            <p>Soy analista de datos y estudiante de desarrollo backend web con Python, actualmente estoy formándome
+                para ampliar mis habilidades en estas áreas con un enfoque en la creación de soluciones tecnológicas
+                efectivas y el análisis estratégico de datos. Me interesan las herramientas de análisis y el desarrollo
+                backend y cómo pueden aportar valor a proyectos innovadores. Por más que estoy en el inicio de mi
+                camino, mi curiosidad y motivación me impulsan a aprender continuamente y a buscar oportunidades para
+                aplicar mis conocimientos en proyectos reales.</p>
+            <a href='#contacto' class="btn">Contáctame</a>
+        </div>
+        <div class="right">
+            <img src="{{ url_for('static', filename='img/big-data.png') }}" width=600px />
+        </div>
+    </div>
+</div>
+
+
+{% endblock content %}

@@ -13,20 +13,22 @@
 
 
 <body>
-
-    <header>
-        <div class='logo'>ALBERTO RODRÍGUEZ</div>
-        <nav>
-            <ul>
-                <li><a href="#">Inicio</a></li>
-                <li><a href='#contacto'>Contacto</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    {% block content %}
+    {% include "partials/nav.html" %}
     
-    {% endblock  %}
+    <main>
+        {% block content %}
+
+        {% endblock content %}
+        {% include "partials/formulario.html" %}
+    </main>
+
+    <footer>
+        <section>
+            <a href="#">Inicio</a>
+            <a href="#">Correo de contacto</a>
+        </section>
+        <p>Hola Mundo</p>
+    </footer>
 </body>
 
 </html>

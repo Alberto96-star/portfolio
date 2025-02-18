@@ -4,11 +4,7 @@
 
 {% block content %}
 
-<section class="articulo">
-    <article>artico 1</article>
-    <article>artico 2</article>
-    <article>artico 3</article>
-</section>
+{% include "partials/blog_proyect.html" %}
 
 
 <div>
@@ -23,9 +19,9 @@
 </div>
 
 <div class="hero">
-    <div class="hero-content">
+    <div class="hero-content center">
         <div class="left">
-            <h3>Hola soy Alberto Rodríguez</h3>
+            <h2>Hola soy Alberto Rodríguez</h2>
             <p>Soy analista de datos y estudiante de desarrollo backend web con Python, actualmente estoy formándome
                 para ampliar mis habilidades en estas áreas con un enfoque en la creación de soluciones tecnológicas
                 efectivas y el análisis estratégico de datos. Me interesan las herramientas de análisis y el desarrollo
@@ -35,7 +31,7 @@
             <a href='#contacto' class="btn">Contáctame</a>
         </div>
         <div class="right">
-            <img src="{{ url_for('static', filename='img/big-data.png') }}" width=600px />
+            <img src="{{ url_for('static', filename='img/big-data.png') }}" width=500px />
         </div>
     </div>
 </div>

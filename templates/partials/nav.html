@@ -1,14 +1,12 @@
-<nav >
-    <div >
-        <a  href='{{ url_for('index') }}'>
-            <img src="{{ url_for('static', filename='img/logo_sin_fondo.png' ) }}" alt="Logo" width="120" height="120" > 
-            Alberto Rdríguez
-        </a>
-    </div>
-    <ul >
-        <li><a href='#'>Proyrctos</a></li>
-        <li><a href='#'>Mi CV</a></li>
-        <li><a href='#contacto'>Contacto</a></li>
-    </ul>
-</nav>
+<div class="logo">
+    <img src="{{ url_for('static', filename='img/logo_sin_fondo.png' ) }}" alt="Logo" width="65" height="65" > 
+    <a class="left-padded" href='{{ url_for('index') }}'>
+        Alberto Rodríguez
+    </a>
+</div>
+<ul class="row nav-btn">
+    <li class="padded"><a href='#'>Proyectos</a></li>
+    <li class="padded"><a href='#'>Mi CV</a></li>
+    <li class="padded"><a href='#contacto' class=" btn">Contacto</a></li>
+</ul>
 

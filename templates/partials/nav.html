@@ -1,11 +1,13 @@
 <div class="logo">
-    <img src="{{ url_for('static', filename='img/logo_sin_fondo.png' ) }}" alt="Logo" width="65" height="65" > 
+    <a href='{{ url_for('index') }}'>
+    <img src="{{ url_for('static', filename='img/logo_sin_fondo.png' ) }}" alt="Logo" width="65" height="65" >
+    </a>
     <a class="left-padded" href='{{ url_for('index') }}'>
         Alberto Rodríguez
     </a>
 </div>
 <ul class="row nav-btn">
-    <li class="padded"><a href='#'>Proyectos</a></li>
+    <li class="padded"><a href='{{ url_for('proyectos') }}'>Proyectos</a></li>
     <li class="padded"><a href='#'>Mi CV</a></li>
     <li class="padded"><a href='#contacto' class=" btn">Contacto</a></li>
 </ul>

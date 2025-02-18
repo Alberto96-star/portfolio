@@ -1,7 +1,5 @@
 html {
     font-family: 'Rufina', sans-serif;
-    margin: 0;
-    padding: 0;
 }
 
 body {
@@ -170,6 +168,11 @@ a.btn {
     padding: 20px 30px;
 }
 
+.third {
+    width: auto;
+    margin: 10px;
+}
+
 .contact-form input {
     font-family: 'Rubik', sans-serif;
     border: none;
@@ -227,4 +230,10 @@ a.btn {
 
 .white-bg {
     background-color: #fff;
+}
+
+.blog-img {
+    width: 400px;
+    height: 200px;
+    object-fit: contain;
 }

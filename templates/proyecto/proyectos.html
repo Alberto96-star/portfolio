@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+
+{% block title %}Proyectos{% endblock %}
+
+{% block extra_css %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='style/galery.css') }}">
+{% endblock %}
+
+{% block content %}
+
+    <section>
+
+        <h2 class="center">Titulo proyecto</h2>
+        <p class="center">Breve analisis del proyecto</p>
+    
+        <article class="center galery">
+            <img src="{{ url_for('static', filename='img/merx_principal.png') }}" class="galery-img" />
+            <img src="{{ url_for('static', filename='img/merx_pag2.png') }}" class="galery-img" />
+            <img src="{{ url_for('static', filename='img/merx_pag3.png') }}" class="galery-img" />
+        </article>
+        
+        <h2 class="center">Titulo proyecto</h2>
+        <p class="center">Breve analisis del proyecto</p>
+    
+        <article class="galery">
+            <img src="{{ url_for('static', filename='img/pedidos_proveedores_pag1.png') }}" class="galery-img" />
+            <img src="{{ url_for('static', filename='img/pedidos_proveedores_pag2.png') }}" class="galery-img" />
+        </article>
+    
+        <h2 class="center">Titulo proyecto</h2>
+        <p class="center">Breve analisis del proyecto</p>
+    
+        <article class="galery">
+            <img src="{{ url_for('static', filename='img/trafico_inb_call_center.png') }}" class="galery-img" />
+        </article>
+    </section>
+{% endblock %}

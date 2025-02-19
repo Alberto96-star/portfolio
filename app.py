@@ -42,8 +42,9 @@ def mail():
 
 def send_email(name, email, message):
     sg = sendgrid.SendGridAPIClient(api_key=SENDGRID_KEY)
+    my_mail = FROM_EMAIL
     from_email = Email(FROM_EMAIL)
-    to_email = To(FROM_EMAIL, substitutions={
+    to_email = To(my_mail, substitutions={
         "-name-": name,
         "-email-": email,
         "-message-": message,
@@ -55,13 +56,8 @@ def send_email(name, email, message):
         <p>Correo: -email-</p>
         <p>Mensaje: -message-</p>
     """
-    email = Mail(
-    from_email=from_email,
-    to_emails=FROM_EMAIL,  # Asegúrate de que sea una lista o un string
-    subject="Nuevo contacto desde la web",
-    html_content=html_content
-    )
-    response = sg.send(email)
+    mail = Mail(my_mail, to_email, 'Nuevo contacto desde la web', html_content=html_content)
+    response = sg.client.mail.send.post(request_body=mail.get())
 
 # la configuracion de debug debe estar al final
 if __name__ == "__main__":

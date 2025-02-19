@@ -17,7 +17,7 @@ if not SENDGRID_KEY or not FROM_EMAIL:
     raise ValueError("Las variables SENDGRID_KEY y FROM_EMAIL deben estar configuradas en Vercel.")
 
 app.config.from_mapping(
-        SENDGRID_KEY= 'SENDGRID_KEY'
+        SENDGRID_KEY= SENDGRID_KEY
     )
 
 @app.route('/', methods=['GET'])
@@ -55,10 +55,10 @@ def send_email(name, email, message):
         <p>Correo: -email-</p>
         <p>Mensaje: -message-</p>
     """
-    email = Mail(from_email, to_email, 'Nuevo contacto desde la web', html_content=html_content)
+    email = Mail(
+    from_email=from_email,
+    to_emails=FROM_EMAIL,  # Asegúrate de que sea una lista o un string
+    subject="Nuevo contacto desde la web",
+    html_content=html_content
+    )
     response = sg.send(email)
-
-    
-# la configuracion de debug debe estar al final
-if __name__ == "__main__":
-    app.run(debug=True)

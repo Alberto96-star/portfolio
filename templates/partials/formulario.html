@@ -1,5 +1,5 @@
 <aside class="center padded">
-    <form method="post" class="contact-form">
+    <form method="post" class="contact-form" action="{{ url_for('mail') }}">
         <input id="contacto" name="name" placeholder="Nombre" required>
         <input type="email" name="email" placeholder="Correo" required>
         <textarea placeholder='Mensaje' name='message' required minlength=10></textarea>

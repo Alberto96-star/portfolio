@@ -62,3 +62,7 @@ def send_email(name, email, message):
     html_content=html_content
     )
     response = sg.send(email)
+
+# la configuracion de debug debe estar al final
+if __name__ == "__main__":
+    app.run(debug=True)

@@ -16,14 +16,8 @@ a {
     font-weight: 700;
 }
 
-.nav-pag:hover {
-    border: 2px solid #f84f07;
-    border-radius: 5px;
-    padding: 10px 10px;
-    transition: 0.2s;
-}
-
 html body header {
+    font-family: 'Rufina', sans-serif;
     display: flex;
     justify-content: space-between;
     box-shadow: 2px 0 2px #C4CEE5;
@@ -52,6 +46,14 @@ html body nav ul li a {
     padding: 0 15px;
 }
 
+.nav-pag:hover {
+    font-family: 'Rufina', sans-serif;
+    border: 2px solid #f84f07;
+    border-radius: 5px;
+    padding: 10px 10px;
+    transition: 0.2s;
+}
+
 .logo {
     font-size: 20px;
     font-family: 'Rubik', sans-serif;
@@ -61,12 +63,14 @@ html body nav ul li a {
 }
 
 .nav-btn {
+    font-family: 'Rufina', sans-serif;
     align-items: center;
     justify-content: space-between;
     list-style-type: none;
 }
 
 .list-icon {
+    font-family: 'Rufina', sans-serif;
     display: flex;
     list-style-type: none;
     justify-content: center;
@@ -74,6 +78,7 @@ html body nav ul li a {
 }
 
 .icon {
+    font-family: 'Rufina', sans-serif;
     padding: 20px;
     border: none;
     width: 50px;
@@ -81,6 +86,7 @@ html body nav ul li a {
 }
 
 .hero {
+    font-family: 'Rufina', sans-serif;
     position: relative;
     z-index: 1;
     display: flex;
@@ -90,6 +96,7 @@ html body nav ul li a {
 }
 
 .hero .hero-content {
+    font-family: 'Rufina', sans-serif;
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -104,7 +111,7 @@ html body nav ul li a {
 }
 
 .hero p {
-    font-family: 'Rubik', sans-serif;
+    font-family: 'Rufina', sans-serif;
     margin-bottom: 50px;
 }
 
@@ -114,6 +121,7 @@ html body nav ul li a {
 }
 
 .btn {
+    font-family: 'Rufina', sans-serif;
     background-color: #f84f07;
     color: #fff;
     border: none;
@@ -124,6 +132,7 @@ html body nav ul li a {
 }
 
 .btn:hover {
+    font-family: 'Rufina', sans-serif;
     background-color: #c04009;
     color: #fff;
     border: none;
@@ -139,6 +148,7 @@ a.btn {
 .center {
     display: flex;
     justify-content: center;
+    margin: 5px;
 }
 
 .content {
@@ -168,11 +178,12 @@ a.btn {
 }
 
 .card {
+    font-family: 'Rufina', sans-serif;
     background-color: #fff;
     box-shadow: 0 1px 2px #ddd;
     border: solid 1px #ddd;
     border-radius: 5px;
-    padding: 20px 30px;
+    padding: 5px 10px;
 }
 
 .third {
@@ -181,7 +192,7 @@ a.btn {
 }
 
 .contact-form input {
-    font-family: 'Rubik', sans-serif;
+    font-family: 'Rufina', sans-serif;
     border: none;
     box-shadow: 0px 1px 2px #aaa;
     height: 30px;
@@ -208,6 +219,7 @@ a.btn {
 }
 
 .footer {
+    font-family: 'Rufina', sans-serif;
     width: 100%;
     height: auto;
     margin: 0;

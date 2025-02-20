@@ -8,28 +8,25 @@
 
 {% block content %}
 
-    <section>
-
-        <h2 class="center">Titulo proyecto</h2>
-        <p class="center">Breve analisis del proyecto</p>
-    
+    <section class="card third">
+        <h2 class="center">Comercio Merx</h2>
         <article class="center galery">
             <img src="{{ url_for('static', filename='img/merx_principal.png') }}" class="galery-img" />
             <img src="{{ url_for('static', filename='img/merx_pag2.png') }}" class="galery-img" />
             <img src="{{ url_for('static', filename='img/merx_pag3.png') }}" class="galery-img" />
         </article>
-        
-        <h2 class="center">Titulo proyecto</h2>
-        <p class="center">Breve analisis del proyecto</p>
-    
+    </section>
+
+    <section class="card third">
+        <h2 class="center">Pedidos y Proveedores</h2>
         <article class="galery">
             <img src="{{ url_for('static', filename='img/pedidos_proveedores_pag1.png') }}" class="galery-img" />
             <img src="{{ url_for('static', filename='img/pedidos_proveedores_pag2.png') }}" class="galery-img" />
         </article>
-    
-        <h2 class="center">Titulo proyecto</h2>
-        <p class="center">Breve analisis del proyecto</p>
-    
+    </section>
+
+    <section class="card third">
+        <h2 class="center">Tráfico Call Center</h2>
         <article class="galery">
             <img src="{{ url_for('static', filename='img/trafico_inb_call_center.png') }}" class="galery-img" />
         </article>

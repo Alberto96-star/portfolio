@@ -16,19 +16,26 @@ a {
     font-weight: 700;
 }
 
-a:hover {
-    color: #f84f07;
+.nav-pag:hover {
+    border: 2px solid #f84f07;
+    border-radius: 5px;
+    padding: 10px 10px;
+    transition: 0.2s;
 }
 
 html body header {
     display: flex;
     justify-content: space-between;
-    background-color: #fff;
-    box-shadow: 3px 0 5px #aaa;
+    box-shadow: 2px 0 2px #C4CEE5;
     margin: 0;
     padding: 0px 30px;
     position: relative;
     z-index: 2;
+}
+
+header {
+    background-color: #A9B5DF;
+    background-image: linear-gradient(to bottom, #A9B5DF, #f3f8fa);
 }
 
 
@@ -205,8 +212,9 @@ a.btn {
     height: auto;
     margin: 0;
     padding: 0;
-    background-color: #333;
-    color: #fff;
+    background-color: #A9B5DF;
+    background-image: linear-gradient(to top, #A9B5DF, #C4CEE5);
+    color: #061a49;
 }
 
 .social-links {

@@ -256,3 +256,158 @@ a.btn {
     height: 200px;
     object-fit: contain;
 }
+
+@media screen and (max-width: 900px) {
+    .hero .hero-content {
+        flex-direction: column;
+    }
+
+    .left,
+    .right {
+        width: 100%;
+        text-align: center;
+    }
+
+    .row {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .card.third {
+        width: 45%;
+    }
+
+    .galery {
+        width: 100%;
+        height: auto;
+        flex-wrap: wrap;
+    }
+
+    .galery-img {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .galery-img:hover {
+        width: 100%;
+    }
+}
+
+/* Para móviles */
+@media screen and (max-width: 600px) {
+    html body header {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .logo {
+        margin-bottom: 10px;
+    }
+
+    html body nav ul li {
+        display: block;
+        margin: 8px 0;
+        text-align: center;
+    }
+
+    .card.third {
+        width: 100%;
+    }
+
+    .hero {
+        padding: 10px;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .btn {
+        padding: 10px 20px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .blog-img,
+    .right img {
+        width: 100%;
+        height: auto;
+    }
+
+    .list-icon .icon {
+        padding: 10px;
+        width: 40px;
+        height: 40px;
+    }
+}
+
+/* Estilos responsive generales */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.contact-form {
+    width: 90%;
+    max-width: 500px;
+}
+
+/* Estilos para navegación móvil */
+@media screen and (max-width: 768px) {
+    .nav-btn {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    }
+
+    .made-with {
+        text-align: center;
+    }
+}
+
+/* Box-sizing para todos los elementos */
+/* *,
+*:before,
+*:after {
+    box-sizing: border-box;
+} */
+
+
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #061a49;
+    padding: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+        position: absolute;
+        top: 15px;
+        right: 15px;
+    }
+
+    .nav-btn {
+        width: 100%;
+        transition: max-height 0.3s ease;
+        overflow: hidden;
+    }
+
+    .nav-closed {
+        max-height: 0;
+    }
+
+    .nav-open {
+        max-height: 300px;
+    }
+
+    .logo {
+        margin-right: auto;
+    }
+}

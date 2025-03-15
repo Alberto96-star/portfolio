@@ -1,9 +1,10 @@
-from flask import Flask, render_template, redirect, url_for, request, jsonify
+from flask import Flask, render_template, redirect, url_for, request, jsonify, flash, session
 from decouple import config
 from sendgrid.helpers.mail import *
 from sendgrid import SendGridAPIClient
 import sendgrid
 import os
+import uuid
 
 
 app = Flask(__name__)
@@ -38,9 +39,20 @@ def mail():
         name = request.form.get('name')
         email = request.form.get('email')
         message = request.form.get('message')
+
+        # Enviar correo
         send_email(name, email, message)
-        return render_template('partials/sent_mail.html')
-    return render_template('partials/inicio.html')
+
+        # Importante: Redireccionar después del POST para evitar reenvíos
+        return redirect(url_for('mail_success'))
+
+    # Si la solicitud es GET, redirigir a la página de inicio
+    return redirect(url_for('index'))
+
+
+@app.route('/mail/success')
+def mail_success():
+    return render_template('partials/sent_mail.html')
 
 
 def send_email(name, email, message):

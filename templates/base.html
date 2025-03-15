@@ -30,20 +30,7 @@
         {% include "partials/footer.html" %}
 
     </footer>
-
-    <script>
-    document.addEventListener('DOMContentLoaded', function() {
-        const form = document.querySelector('.contact-form');
-        if (form) {
-        form.addEventListener('submit', function() {
-            const button = this.querySelector('button');
-            button.disabled = true;
-            button.textContent = 'Enviando...';
-        });
-        }
-    });
-    </script>
-
+    <script src="{{ url_for('static', filename='js/scripts.js') }}"></script>
 </body>
 
 </html>

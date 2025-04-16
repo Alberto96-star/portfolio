@@ -46,6 +46,10 @@ html body nav ul li a {
     padding: 0 15px;
 }
 
+footer {
+    font-family: 'Rufina', sans-serif;
+}
+
 .nav-pag:hover {
     font-family: 'Rufina', sans-serif;
     border: 2px solid #f84f07;
@@ -252,6 +256,7 @@ a.btn {
 .blog-img {
     width: 400px;
     height: 200px;
+    margin-bottom: 5px;
     object-fit: contain;
 }
 
